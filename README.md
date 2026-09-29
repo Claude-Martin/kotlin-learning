@@ -1,0 +1,3 @@
+- [~] ch01 — Basics (in progress: ex01, ex01b, ex02, ex03 done)
+- [ ] ch02 — Conditionals
+- [ ] ch03 — Loops
