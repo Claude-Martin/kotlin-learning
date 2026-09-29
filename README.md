@@ -1,3 +1,3 @@
-- [~] ch01 — Basics (in progress: ex01, ex01b, ex02, ex03 done)
+- [x] ch01 — Basics (val/var, types, functions, if-expression)
 - [ ] ch02 — Conditionals
 - [ ] ch03 — Loops
