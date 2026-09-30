@@ -62,4 +62,21 @@ fun main() {
     } while (alsoZero > 0)
     println("do-while with false condition: body ran at least once")
 
+    section("break and continue")
+
+    for (i in 1..10) {
+        if (i == 3) continue
+        if (i == 7) break
+        print("$i ")
+    }
+    println()
+
+    for (i in 1..3) {
+        for (j in 1..3) {
+            if (j == 2) break
+            print("($i,$j) ")
+        }
+    }
+    println()
+
 }
