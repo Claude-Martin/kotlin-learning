@@ -31,4 +31,19 @@ fun main() {
     for ((i, n) in listOf(3, 1, 4, 1, 5).withIndex()) {
         println("index $i: $n")
     }
+
+    section("while")
+
+    var n = 5
+    while (n > 0) {
+        print("$n ")
+        n--
+    }
+    println()
+
+    var zero = 0
+    while (zero > 0) {
+        println("this line should never print")
+    }
+    println("while with false condition: body ran zero times")
 }
