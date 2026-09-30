@@ -1,3 +1,3 @@
 - [x] ch01 — Basics (val/var, types, functions, if-expression)
 - [x] ch02 — Conditionals
-- [ ] ch03 — Loops
+- [x] ch03 — Loops
