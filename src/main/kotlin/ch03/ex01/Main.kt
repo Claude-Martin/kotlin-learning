@@ -46,4 +46,20 @@ fun main() {
         println("this line should never print")
     }
     println("while with false condition: body ran zero times")
+
+    section("do-while")
+
+    var m = 5
+    do {
+        print("$m ")
+        m--
+    } while (m > 0)
+    println()
+
+    var alsoZero = 0
+    do {
+        println("this line prints even though condition is false")
+    } while (alsoZero > 0)
+    println("do-while with false condition: body ran at least once")
+
 }
