@@ -19,4 +19,16 @@ fun main() {
 
     for (i in 10 downTo 1 step 3) { print("$i ") }
     println()
+
+    section("for over collections and strings")
+
+    for (c in "hello") { print("$c-") }
+    println()
+
+    for (n in listOf(3, 1, 4, 1, 5)) { print("$n ") }
+    println()
+
+    for ((i, n) in listOf(3, 1, 4, 1, 5).withIndex()) {
+        println("index $i: $n")
+    }
 }
