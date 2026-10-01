@@ -59,4 +59,19 @@ fun main() {
     // vararg is usually last, but named arguments can change that:
     println(tag("veggies", "carrot", "pea"))
 
+    fun classifyScores(scores: List<Int>): String {
+        fun grade(score: Int) = when {
+            score >= 90 -> "A"
+            score >= 80 -> "B"
+            score >= 70 -> "C"
+            else -> "F"
+        }
+
+        return scores.joinToString(", ") { "${it}->${grade(it)}" }
+    }
+
+    section("local functions")
+
+    println(classifyScores(listOf(95, 82, 71, 64)))
+
 }
