@@ -22,5 +22,28 @@ fun main() {
     println(formatName(last = "Lovelace", first = "Ada"))
     println(formatName(first = "Ada", last = "Lovelace", title = "Dr"))
 
+    fun sum(vararg nums: Int): Int {
+        var total = 0
+        for (n in nums) total += n
+        return total
+    }
+
+    fun printAll(vararg items: String) {
+        for (item in items) println(item)
+    }
+
+    section("vararg")
+
+    println(sum(1, 2, 3))
+    println(sum(1, 2, 3, 4, 5))
+    println(sum())                          // zero arguments — empty array
+
+    printAll("a", "b", "c")
+
+    val values = intArrayOf(10, 20, 30)
+    println(sum(*values))                   // spread operator: pass array as vararg
+
+    val list = listOf(1,2,3,4,5)
+    println(sum(*list.toIntArray()))
 
 }
