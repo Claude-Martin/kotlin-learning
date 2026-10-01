@@ -46,4 +46,17 @@ fun main() {
     val list = listOf(1,2,3,4,5)
     println(sum(*list.toIntArray()))
 
+    fun tag(label: String, vararg items: String): String {
+        return "[$label] " + items.joinToString(", ")
+    }
+
+    // fun broken(vararg items: String, label: String) = ...
+
+    section("vararg with other parameters")
+
+    println(tag("fruit", "apple", "banana", "cherry"))
+    println(tag("empty"))
+    // vararg is usually last, but named arguments can change that:
+    println(tag("veggies", "carrot", "pea"))
+
 }
